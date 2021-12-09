@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;100;200;500;600;700;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 3rem auto;
+  position: relative;
+}
+
+/* header section  */
+#header {
+  /* text-align: center; */
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title1 {
+  font-weight: 100;
+  font-size: 2rem;
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 0.4rem;
+}
+
+.header-title2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1rem;
+}
+
+.header-text {
+  width: 450px;
+  margin: 0 auto;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+/* end of header seciton  */
+
+/* main section  */
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.col-1,
+.col-3 {
+  background-color: white;
+  height: 200px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+}
+.col-1 {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-3 {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-2 {
+  background-color: white;
+  height: 200px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  border-top: 5px solid hsl(180, 62%, 55%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 2rem;
+}
+
+.col-4 {
+  margin-top: 2rem;
+  background-color: white;
+  height: 200px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  border-top: 5px solid hsl(212, 86%, 64%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 2rem;
+}
+
+.col-btm {
+  display: flex;
+  justify-content: end;
+}
+
+.col-top p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: hsl(229, 6%, 66%);
+}
+
+/* end of main section  */
+
+/* mobile design */
+@media (max-width: 900px) {
+  .main-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* end of mobile design */
